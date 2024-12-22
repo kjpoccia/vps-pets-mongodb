@@ -1,0 +1,11 @@
+{
+  "name": "VPS Project - Pets - Backend",
+  "version": "0.0.0",
+  "description": "Pets Backend API Documentation",
+  "title": "VPS Pets App",
+  "url": "/api",
+  "groups": ["Pet"],
+  "template": {
+    "withCompare": "false"
+  }
+}
