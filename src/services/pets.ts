@@ -4,7 +4,6 @@ import { NewPet } from "../types"
 
 const getAllPets = async () => {
   const { data } = await axios.get<[]>(`${apiBaseUrl}/pets`);
-  console.log(typeof data);
   return data;
 };
 
