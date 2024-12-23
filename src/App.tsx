@@ -103,10 +103,6 @@ function App() {
   }
 
   const findLocalPet = (id: string) => {
-    if (!Array.isArray(currentList)) {
-      console.log('currentList is not an Array')
-      console.log(typeof currentList)
-    }
     return currentList.find(pet => pet.id === id);
   }
 

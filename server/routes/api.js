@@ -149,9 +149,7 @@ router.put("/pets/:id", async (req, res, next) => {
         res.status(400).send("Pet cannot be updated.");
       } else {
         const updateQuery = createUpdateQuery(petObj, id);
-        console.log(updateQuery);
         const { rows } = await dbClient.query(updateQuery);
-        console.log(rows);
         res.status(200).json(rows[0])
       }
     } else {
@@ -181,18 +179,5 @@ router.delete("/pets/:id", async (req, res, next) => {
     return res.status(500).send("Deleting pet failed.")
   }
 });
-
-// router.get("/reset", function (req, res, next) {
-//   const sql = fs
-//     .readFileSync(path.join(__dirname, "../db/reset.sql"))
-//     .toString();
-//   db.exec(sql, function (error) {
-//     if (error) {
-//       res.status(500).send(error);
-//     }
-
-//     res.status(200).send("Database reset successful!");
-//   });
-// });
 
 module.exports = router;

@@ -15,7 +15,6 @@ const updatePet = async (id: string, updates: NewPet) => {
 
 const addNewPet = async (pet: NewPet) => {
   const { data } = await axios.post(`${apiBaseUrl}/pets`, pet)
-  console.log(data);
   return data;
 }
 
