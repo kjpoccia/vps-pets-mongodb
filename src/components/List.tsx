@@ -7,7 +7,6 @@ interface ListProps {
 }
 
 const List = ({currentList, showModalWithId, onDelete}: ListProps) => {
-
     return (
         <table cellSpacing="0">
             <tbody>

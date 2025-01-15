@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('vps-project-sql:server');
+var debug = require('debug')('vps-project-mongodb:server');
 var http = require('http');
 
 /**
