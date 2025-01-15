@@ -1,5 +1,5 @@
 {
-  "name": "vps-project-sql",
+  "name": "vps-project-mongo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
